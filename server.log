@@ -1,0 +1,242 @@
+
+> dev
+> next dev
+
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1391ms
+ ✓ Compiled /api/contact in 470ms (107 modules)
+ POST /api/contact 200 in 720ms
+Email notification sent successfully
+ ○ Compiling / ...
+ ✓ Compiled / in 4.4s (1435 modules)
+ GET / 200 in 4377ms
+ GET / 200 in 4932ms
+ ✓ Compiled in 611ms (680 modules)
+ GET / 200 in 197ms
+ GET / 200 in 66ms
+ POST /api/contact 200 in 122ms
+Email notification sent successfully
+ GET / 200 in 45ms
+ GET / 200 in 41ms
+ GET / 200 in 37ms
+ ✓ Compiled in 507ms (680 modules)
+ ✓ Compiled in 534ms (1348 modules)
+ ✓ Compiled /api/contact in 127ms (749 modules)
+ POST /api/contact 200 in 289ms
+Email notification sent successfully
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+- /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/hot-middleware.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-server.js
+- /opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1225:15)
+    at /opt/hostedapp/node/root/app/node_modules/next/dist/server/require-hook.js:55:36
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
+    at mod.require (/opt/hostedapp/node/root/app/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:136:16)
+    at __webpack_require__.f.require (/home/ubuntu/droneshow/app/.build/server/webpack-runtime.js:200:28)
+    at /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js:108:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home/ubuntu/droneshow/app/.build/server/webpack-runtime.js:107:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home/ubuntu/droneshow/app/.build/server/webpack-runtime.js:159:22)
+    at /home/ubuntu/droneshow/app/.build/server/app/page.js:1:226929
+    at Object.<anonymous> (/home/ubuntu/droneshow/app/.build/server/app/page.js:1:226978)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1311:12)
+    at mod.require (/opt/hostedapp/node/root/app/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:136:16)
+    at requirePage (/opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js:109:84)
+    at /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js:103:84
+    at async loadComponentsImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/next-server.js:714:36)
+    at async DevServer.findPageComponents (/opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/opt/hostedapp/node/root/app/node_modules/next/dist/server/base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/opt/hostedapp/node/root/app/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/base-server.js:818:17)
+    at async /opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/opt/hostedapp/node/root/app/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-server.js:178:21)
+    at async handleRequest (/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-server.js:355:24)
+    at async requestHandlerImpl (/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-server.js:379:13)
+    at async Server.requestListener (/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/ubuntu/droneshow/app/.build/server/webpack-runtime.js',
+    '/home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/router-server.js',
+    '/opt/hostedapp/node/root/app/node_modules/next/dist/server/lib/start-server.js'
+  ],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1332ms (1563 modules)
+ GET / 500 in 1576ms
+ GET / 200 in 147ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/get-nonce' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/get-nonce.js', but to 'Error: Can't resolve './vendor-chunks/get-nonce' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/get-nonce (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/get-nonce.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/aria-hidden' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js', but to 'Error: Can't resolve './vendor-chunks/aria-hidden' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/aria-hidden (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/clsx' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/clsx.js', but to 'Error: Can't resolve './vendor-chunks/clsx' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/clsx (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/clsx.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/page.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+ GET / 200 in 52ms
+ GET / 200 in 46ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 614ms (1564 modules)
+ GET / 200 in 85ms
+ GET /_next/static/css/app/layout.css?v=1750004126694 404 in 17ms
+ GET /_next/static/chunks/main-app.js?v=1750004126694 404 in 22ms
+ GET /_next/static/chunks/app/page.js 404 in 14ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 16ms
+ GET /_next/static/chunks/app/layout.js 404 in 16ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/aria-hidden' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js', but to 'Error: Can't resolve './vendor-chunks/aria-hidden' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/aria-hidden (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/aria-hidden.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/get-nonce' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/get-nonce.js', but to 'Error: Can't resolve './vendor-chunks/get-nonce' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/get-nonce (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/get-nonce.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/react-intersection-observer' in /home/ubuntu/droneshow/app/.build/server for build dependencies doesn't lead to expected result '/home/ubuntu/droneshow/app/.build/server/vendor-chunks/react-intersection-observer.js', but to 'Error: Can't resolve './vendor-chunks/react-intersection-observer' in '/home/ubuntu/droneshow/app/.build/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/react-intersection-observer (expected /home/ubuntu/droneshow/app/.build/server/vendor-chunks/react-intersection-observer.js)
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/webpack-runtime.js
+<w>  at file dependencies /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file /home/ubuntu/droneshow/app/.build/server/app/api/contact/route.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/require.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /opt/hostedapp/node/root/app/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+ GET / 200 in 91ms
+ GET / 200 in 57ms
+ GET /_next/static/css/app/layout.css?v=1750004947175 404 in 23ms
+ GET / 200 in 57ms
+ GET /_next/static/css/app/layout.css?v=1750004948046 404 in 21ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 22ms
+ GET /_next/static/chunks/app/layout.js 404 in 53ms
+ GET /_next/static/chunks/main-app.js?v=1750004948046 404 in 42ms
+ GET /_next/static/chunks/app/page.js 404 in 37ms
+ GET /pages/4?total=10&is_abacus_ppt=true 404 in 17ms
+ GET /_next/static/css/app/layout.css?v=1750005046183 404 in 24ms
+ GET /_next/static/chunks/main-app.js?v=1750005046183 404 in 14ms
+ GET /_next/static/chunks/app/layout.js 404 in 22ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 14ms
+ GET /pages/1?total=10&is_abacus_ppt=true 404 in 17ms
+ GET /_next/static/chunks/main-app.js?v=1750005048039 404 in 16ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 16ms
+ GET /_next/static/chunks/app/layout.js 404 in 15ms
+ GET /_next/static/css/app/layout.css?v=1750005048039 404 in 16ms
+ GET / 200 in 40ms
+ GET /_next/static/css/app/layout.css?v=1750005096452 404 in 17ms
+ GET /_next/static/chunks/main-app.js?v=1750005096452 404 in 13ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 13ms
+ GET / 200 in 45ms
+ GET /_next/static/chunks/app/page.js 404 in 13ms
+ GET / 200 in 37ms
+ GET /_next/static/css/app/layout.css?v=1750005097934 404 in 15ms
+ GET / 200 in 56ms
+ GET /_next/static/chunks/main-app.js?v=1750005097934 404 in 24ms
+ GET / 200 in 60ms
+ GET /_next/static/chunks/main-app.js?v=1750005098916 404 in 20ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 21ms
+ GET /_next/static/css/app/layout.css?v=1750005098916 404 in 15ms
+ GET /_next/static/chunks/app/page.js 404 in 20ms
+ GET /_next/static/chunks/app/layout.js 404 in 16ms
